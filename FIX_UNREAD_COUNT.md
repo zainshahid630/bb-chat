@@ -21,7 +21,7 @@ I've fixed the issue by adding automatic message status updates when admin views
 
 ## 🔧 **What Changed:**
 
-### **File: `betting-chat-system/src/components/ChatInterface.jsx`**
+### **File: `Businesss-chat-system/src/components/ChatInterface.jsx`**
 
 **Added automatic "mark as read" when admin opens chat:**
 
@@ -46,7 +46,7 @@ const loadMessages = async () => {
 }
 ```
 
-### **File: `betting-chat-system/src/components/AdminPanel.jsx`**
+### **File: `Businesss-chat-system/src/components/AdminPanel.jsx`**
 
 **Increased refresh rate to update unread counts faster:**
 

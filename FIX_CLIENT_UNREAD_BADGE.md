@@ -15,7 +15,7 @@ The `markMessagesRead()` function was only being called when **admin** opened a 
 
 ### **Before (BROKEN):**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.jsx" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.jsx" mode="EXCERPT">
 ```javascript
 // If admin is viewing, mark all client messages as read
 if (user.is_admin) {
@@ -39,7 +39,7 @@ if (user.is_admin) {
 
 Now marks messages as read for **both** admin and client:
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.jsx" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.jsx" mode="EXCERPT">
 ```javascript
 // Mark messages as read based on who is viewing
 if (user.is_admin) {

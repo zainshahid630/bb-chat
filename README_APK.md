@@ -2,7 +2,7 @@
 
 ## 🎉 Everything is Set Up!
 
-Your betting chat system is now ready to be converted into an Android APK. All configuration files have been created and your project is prepared.
+Your Businesss chat system is now ready to be converted into an Android APK. All configuration files have been created and your project is prepared.
 
 ## 🚀 Three Ways to Build Your APK
 
@@ -68,8 +68,8 @@ npx cap open android
 2. **`capacitor.config.json`** - App configuration
    ```json
    {
-     "appId": "com.bettingchat.app",
-     "appName": "Betting Chat",
+     "appId": "com.Businesschat.app",
+     "appName": "Businesss Chat",
      "webDir": "dist"
    }
    ```

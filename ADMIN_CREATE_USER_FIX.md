@@ -22,7 +22,7 @@ The issue was in the `authHelpers.signUp()` function:
 // OLD CODE (PROBLEM):
 async signUp(username, password, phoneNumber) {
   const { data: authData } = await supabase.auth.signUp({
-    email: `${username}@bettingapp.local`,
+    email: `${username}@Businessapp.local`,
     password,
     // ...
   })
@@ -63,7 +63,7 @@ async createUserByAdmin(username, password, phoneNumber) {
   
   // 2. Create user in Supabase Auth
   const { data: authData, error: authError } = await supabase.auth.signUp({
-    email: `${username}@bettingapp.local`,
+    email: `${username}@Businessapp.local`,
     password,
     options: {
       emailRedirectTo: undefined,

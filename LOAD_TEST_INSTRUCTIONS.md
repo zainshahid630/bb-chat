@@ -65,7 +65,7 @@ This means all indexes were created successfully!
 Run the automated test to verify optimizations:
 
 ```bash
-cd betting-chat-system
+cd Businesss-chat-system
 node performance-test.js
 ```
 
@@ -120,7 +120,7 @@ node performance-test.js
 
 **Run:**
 ```bash
-cd betting-chat-system
+cd Businesss-chat-system
 node load-test.js
 ```
 

@@ -1,7 +1,7 @@
 # Business Chat System - Complete Setup Guide
 
 ## 🎯 Overview
-This is a secure web-based chat system to replace WhatsApp for managing your betting business with:
+This is a secure web-based chat system to replace WhatsApp for managing your Business business with:
 - ✅ User authentication (username/password)
 - ✅ 4 department routing (Deposit, Withdraw, New User ID, Complaint)
 - ✅ Real-time chat with text, images, files, and voice messages
@@ -123,7 +123,7 @@ VALUES ('admin', crypt('your_admin_password', gen_salt('bf')), TRUE);
 
 ### Step 4: Configure Environment Variables
 
-Create `.env` file in `betting-chat-system/`:
+Create `.env` file in `Businesss-chat-system/`:
 
 ```env
 VITE_SUPABASE_URL=your_supabase_project_url
@@ -133,7 +133,7 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
 ### Step 5: Install Dependencies
 
 ```bash
-cd betting-chat-system
+cd Businesss-chat-system
 npm install @supabase/supabase-js
 npm install react-router-dom
 npm install lucide-react  # For icons
@@ -142,7 +142,7 @@ npm install lucide-react  # For icons
 ## 🚀 Running the Application
 
 ```bash
-cd betting-chat-system
+cd Businesss-chat-system
 npm run dev
 ```
 

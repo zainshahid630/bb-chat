@@ -240,10 +240,10 @@ After building, copy APK to Desktop:
 
 ```bash
 # Debug APK
-cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BettingChat-Debug.apk
+cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BusinessChat-Debug.apk
 
 # Release APK
-cp android/app/build/outputs/apk/release/app-release-unsigned.apk ~/Desktop/BettingChat-Release.apk
+cp android/app/build/outputs/apk/release/app-release-unsigned.apk ~/Desktop/BusinessChat-Release.apk
 ```
 
 ---

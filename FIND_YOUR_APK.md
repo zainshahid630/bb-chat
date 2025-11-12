@@ -51,7 +51,7 @@ cd android
 
 ### Copy APK to Desktop for easy access:
 ```bash
-cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BettingChat.apk
+cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BusinessChat.apk
 ```
 
 ### Check APK file size:
@@ -144,7 +144,7 @@ Your APK contains:
 ls -lh android/app/build/outputs/apk/debug/app-debug.apk
 
 # Copy to Desktop
-cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BettingChat.apk
+cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BusinessChat.apk
 
 # Install via ADB
 adb install android/app/build/outputs/apk/debug/app-debug.apk

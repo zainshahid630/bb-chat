@@ -3,5 +3,5 @@
     <string name="app_name">Business Chat</string>
     <string name="title_activity_main">Business Chat</string>
     <string name="package_name">com.businesschat.app</string>
-    <string name="custom_url_scheme">com.bettingchat.app</string>
+    <string name="custom_url_scheme">com.Businesschat.app</string>
 </resources>

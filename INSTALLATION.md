@@ -22,7 +22,7 @@ node --version  # Should show v20.x.x
 ## Step 1: Install Dependencies
 
 ```bash
-cd betting-chat-system
+cd Businesss-chat-system
 npm install @supabase/supabase-js
 ```
 

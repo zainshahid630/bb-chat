@@ -574,7 +574,7 @@ Optimized for readability on all devices:
 
 ## 🎉 **Result**
 
-Your betting chat system is now **fully responsive** and provides an **excellent mobile experience**!
+Your Businesss chat system is now **fully responsive** and provides an **excellent mobile experience**!
 
 ### **Mobile UX Improvements:**
 

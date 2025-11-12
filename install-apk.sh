@@ -65,7 +65,7 @@ echo "   File: $APK_PATH"
 
 # Uninstall previous version if exists
 echo "🗑️  Uninstalling previous version (if exists)..."
-adb uninstall com.bettingchat.app 2>/dev/null || true
+adb uninstall com.Businesschat.app 2>/dev/null || true
 
 # Install new APK
 echo "📥 Installing new APK..."
@@ -80,8 +80,8 @@ if adb install "$APK_PATH"; then
     echo "   • Test all the chat features"
     echo ""
     echo "🔧 App Details:"
-    echo "   • Package: com.bettingchat.app"
-    echo "   • Name: Betting Chat"
+    echo "   • Package: com.Businesschat.app"
+    echo "   • Name: Businesss Chat"
     echo "   • Version: 1.0"
     echo "   • Type: $APK_TYPE"
 else

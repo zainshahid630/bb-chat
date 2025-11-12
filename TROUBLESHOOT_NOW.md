@@ -4,8 +4,8 @@
 
 ✅ **Fixed email domain mismatch**
 - SignUp was using `@gmail.com`
-- SignIn was using `@betting.local`
-- **Now both use `@bettingapp.local`**
+- SignIn was using `@Business.local`
+- **Now both use `@Businessapp.local`**
 
 ## 🔥 DO THESE STEPS IN ORDER:
 
@@ -47,7 +47,7 @@ OR run this SQL:
 ```sql
 -- Go to SQL Editor and run:
 DELETE FROM auth.users WHERE email LIKE '%@gmail.com';
-DELETE FROM auth.users WHERE email LIKE '%@betting.local';
+DELETE FROM auth.users WHERE email LIKE '%@Business.local';
 ```
 
 ---

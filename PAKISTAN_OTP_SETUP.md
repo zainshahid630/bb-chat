@@ -56,7 +56,7 @@
 
 ### **Step 4: Add Environment Variables**
 
-Create/update `betting-chat-system/.env` file:
+Create/update `Businesss-chat-system/.env` file:
 
 ```bash
 # Twilio Credentials

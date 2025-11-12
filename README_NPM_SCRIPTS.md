@@ -187,7 +187,7 @@ Automatically rebuilds web app and APK.
 ### 4. **Copy APK to Desktop**
 ```bash
 npm run apk:debug
-cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BettingChat.apk
+cp android/app/build/outputs/apk/debug/app-debug.apk ~/Desktop/BusinessChat.apk
 ```
 
 ### 5. **Build and Auto-Install**

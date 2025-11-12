@@ -1,6 +1,6 @@
 # 📱 Android APK Build Guide for Business Chat System
 
-This guide will help you create an Android APK from your betting chat web application.
+This guide will help you create an Android APK from your business chat web application.
 
 ## Prerequisites
 
@@ -188,8 +188,8 @@ The app is configured in `capacitor.config.json`:
 
 ```json
 {
-  "appId": "com.bettingchat.app",
-  "appName": "Betting Chat",
+  "appId": "com.Businesschat.app",
+  "appName": "Business Chat",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "server": {

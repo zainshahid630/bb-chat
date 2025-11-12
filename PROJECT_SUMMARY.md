@@ -2,7 +2,7 @@
 
 ## What I Built For You
 
-A complete, production-ready chat system to replace WhatsApp for your betting business.
+A complete, production-ready chat system to replace WhatsApp for your Business business.
 
 ## ✅ What's Included
 

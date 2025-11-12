@@ -121,7 +121,7 @@ VITE_TWILIO_VERIFY_SERVICE_SID=VAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ### **Step 4: Add to .env File**
 
-Create `betting-chat-system/.env` (copy from `.env.example`):
+Create `Businesss-chat-system/.env` (copy from `.env.example`):
 
 ```bash
 # Existing Supabase config

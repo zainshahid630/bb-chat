@@ -295,7 +295,7 @@ async function cleanup(testChats) {
 // Main test runner
 async function runLoadTests() {
   log(colors.bright, '\n' + '='.repeat(60))
-  log(colors.bright, '⚡ BETTING CHAT SYSTEM - LOAD TEST')
+  log(colors.bright, '⚡ BusinessS CHAT SYSTEM - LOAD TEST')
   log(colors.bright, '='.repeat(60))
   
   try {

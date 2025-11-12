@@ -1,6 +1,6 @@
 # ⚡ Quick Start Guide
 
-Get your betting chat system running in 10 minutes!
+Get your Businesss chat system running in 10 minutes!
 
 ## Step 1: Upgrade Node.js (2 minutes)
 
@@ -20,7 +20,7 @@ node --version  # Should show v20.x.x
 ## Step 2: Install Dependencies (1 minute)
 
 ```bash
-cd betting-chat-system
+cd Businesss-chat-system
 npm install @supabase/supabase-js
 ```
 
@@ -31,7 +31,7 @@ npm install @supabase/supabase-js
 3. Sign up with GitHub or email
 4. Click "New Project"
 5. Fill in:
-   - Name: `betting-chat`
+   - Name: `Business-chat`
    - Database Password: (create a strong password)
    - Region: (choose closest to you)
 6. Click "Create new project"
@@ -48,7 +48,7 @@ npm install @supabase/supabase-js
 ## Step 5: Configure Environment (1 minute)
 
 ```bash
-# In betting-chat-system folder
+# In Businesss-chat-system folder
 cp .env.example .env
 
 # Edit .env file (use nano, vim, or any text editor)

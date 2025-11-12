@@ -430,7 +430,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   },
   global: {
     headers: {
-      'x-client-info': 'betting-chat-v1',
+      'x-client-info': 'Business-chat-v1',
     },
   },
 })

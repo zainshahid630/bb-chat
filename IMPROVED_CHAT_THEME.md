@@ -67,7 +67,7 @@ Completely redesigned the chat interface with:
 
 ### **1. Chat Header**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
 ```css
 .chat-header {
   background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
@@ -87,7 +87,7 @@ After:  [Green Gradient Header] ← WhatsApp-like
 
 ### **2. Background Pattern**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
 ```css
 .messages-container {
   background: 
@@ -111,7 +111,7 @@ After:  [◇◇◇◇◇◇◇◇◇◇] ← Subtle diamond pattern
 
 ### **3. Message Bubbles**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
 ```css
 /* Own messages (sent by user) */
 .message.own .message-content {
@@ -146,7 +146,7 @@ After:
 
 ### **4. Timestamps with Background Pills**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
 ```css
 .message-time {
   font-size: 11px;
@@ -185,7 +185,7 @@ After:
 
 ### **5. Send Button**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
 ```css
 .send-button {
   background: linear-gradient(135deg, #128C7E 0%, #075E54 100%);
@@ -203,7 +203,7 @@ After:
 
 ### **6. Input Focus**
 
-<augment_code_snippet path="betting-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
+<augment_code_snippet path="Businesss-chat-system/src/components/ChatInterface.css" mode="EXCERPT">
 ```css
 .message-input:focus {
   outline: none;

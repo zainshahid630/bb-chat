@@ -385,5 +385,5 @@ Admins now have **complete control** over user management:
 - ✅ Real-time updates
 - ✅ Beautiful, professional UI
 
-**Perfect for managing your betting business!** 🚀
+**Perfect for managing your Business business!** 🚀
 

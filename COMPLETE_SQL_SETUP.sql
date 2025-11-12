@@ -1,5 +1,5 @@
 -- ============================================
--- COMPLETE DATABASE SETUP FOR BETTING CHAT
+-- COMPLETE DATABASE SETUP FOR BusinessS CHAT
 -- Run this in Supabase SQL Editor
 -- ============================================
 

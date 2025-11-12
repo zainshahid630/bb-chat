@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Setup script for creating Android APK from the betting chat system
+# Setup script for creating Android APK from the Businesss chat system
 
 set -e  # Exit on error
 
