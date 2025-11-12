@@ -4,7 +4,7 @@
 
 set -e  # Exit on error
 
-echo "🚀 Setting up Android APK build for Betting Chat System..."
+echo "🚀 Setting up Android APK build for Business Chat System..."
 echo ""
 
 # Check if Node.js is installed

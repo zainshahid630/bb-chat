@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Complete APK Build Script for Betting Chat System
+# Complete APK Build Script for Business Chat System
 # This script will build a complete Android APK from your web app
 
 set -e  # Exit on any error
@@ -13,7 +13,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
-echo -e "${BLUE}   🚀 Betting Chat System - Android APK Builder${NC}"
+echo -e "${BLUE}   🚀 Business Chat System - Android APK Builder${NC}"
 echo -e "${BLUE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"
 echo ""
 

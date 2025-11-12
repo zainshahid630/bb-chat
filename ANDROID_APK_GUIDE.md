@@ -1,4 +1,4 @@
-# 📱 Android APK Build Guide for Betting Chat System
+# 📱 Android APK Build Guide for Business Chat System
 
 This guide will help you create an Android APK from your betting chat web application.
 

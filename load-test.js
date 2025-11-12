@@ -1,4 +1,4 @@
-// Load Testing Script for Betting Chat System
+// Load Testing Script for Business Chat System
 // Tests: 50 simultaneous messages, multiple concurrent users
 
 import { createClient } from '@supabase/supabase-js'
