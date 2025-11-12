@@ -1,0 +1,10 @@
+{
+  "appId": "com.bettingchat.app",
+  "appName": "Betting Chat",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
+

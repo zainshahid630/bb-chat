@@ -1,0 +1,344 @@
+.deposit-form-container {
+  width: 100% !important;
+  background: white;
+  border-left: 2px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.deposit-form-header {
+  padding: 20px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.deposit-form-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+.deposit-form {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #374151;
+}
+
+.form-input,
+.form-select {
+  padding: 10px 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+  background: white;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.form-input:invalid {
+  border-color: #ef4444;
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+/* Staff user selection styling */
+.form-group:has(select[name="staffUserId"]) label {
+  color: #059669;
+  font-weight: 600;
+}
+
+.form-group:has(select[name="staffUserId"]) select {
+  border-color: #10b981;
+}
+
+/* Client Search Dropdown */
+.client-search-container {
+  position: relative;
+}
+
+.client-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.client-option {
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-option:hover {
+  background: #f9fafb;
+}
+
+.client-option:last-child {
+  border-bottom: none;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.client-username {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.client-id {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.client-phone {
+  font-size: 12px;
+  color: #10b981;
+  font-weight: 500;
+}
+
+/* Submit Button */
+.deposit-submit-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.deposit-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.deposit-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Selected Chat Info */
+.selected-chat-info {
+  padding: 20px;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  margin-top: auto;
+}
+
+.selected-chat-info h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.selected-chat-info p {
+  margin: 6px 0;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.selected-chat-info strong {
+  color: #374151;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .deposit-form-container {
+    width: 300px;
+  }
+
+  .deposit-form {
+    padding: 15px;
+    gap: 14px;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .deposit-submit-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .deposit-form-container {
+    width: 100%;
+    height: 40vh;
+    border-left: none;
+    border-top: 2px solid #e5e7eb;
+  }
+
+  .deposit-form-header {
+    padding: 15px 20px;
+  }
+
+  .deposit-form {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .deposit-form-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .deposit-form-header h3 {
+    font-size: 16px;
+  }
+
+  .close-form-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-input,
+  .form-select {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .client-option {
+    padding: 10px;
+  }
+
+  .client-username {
+    font-size: 13px;
+  }
+
+  .client-id,
+  .client-phone {
+    font-size: 11px;
+  }
+
+  .deposit-submit-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .selected-chat-info {
+    padding: 15px 20px;
+  }
+
+  .selected-chat-info h4 {
+    font-size: 13px;
+  }
+
+  .selected-chat-info p {
+    font-size: 12px;
+  }
+}
+
+/* Animation for form appearance */
+.deposit-form-container {
+  animation: slideInRight 0.3s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Scrollbar styling */
+.deposit-form-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.deposit-form-container::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.deposit-form-container::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.deposit-form-container::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.client-dropdown::-webkit-scrollbar {
+  width: 4px;
+}
+
+.client-dropdown::-webkit-scrollbar-track {
+  background: #f9fafb;
+}
+
+.client-dropdown::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+.client-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

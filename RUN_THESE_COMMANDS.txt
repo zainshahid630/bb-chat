@@ -1,0 +1,62 @@
+═══════════════════════════════════════════════════════════════
+  📱 BUILD YOUR ANDROID APK - COPY & PASTE THESE COMMANDS
+═══════════════════════════════════════════════════════════════
+
+Open your terminal in this project folder and run these commands
+ONE BY ONE (copy and paste each command):
+
+───────────────────────────────────────────────────────────────
+STEP 1: Install Dependencies
+───────────────────────────────────────────────────────────────
+
+npm install
+
+(Wait for it to complete - you should see "added X packages")
+
+───────────────────────────────────────────────────────────────
+STEP 2: Add Android Platform
+───────────────────────────────────────────────────────────────
+
+npx cap add android
+
+(This creates the "android" folder - takes about 30 seconds)
+
+───────────────────────────────────────────────────────────────
+STEP 3: Sync Web App to Android
+───────────────────────────────────────────────────────────────
+
+npx cap sync android
+
+(This copies your web app into the Android project)
+
+───────────────────────────────────────────────────────────────
+STEP 4: Build the APK
+───────────────────────────────────────────────────────────────
+
+cd android && ./gradlew assembleDebug
+
+(This builds the APK - takes 2-5 minutes the first time)
+
+───────────────────────────────────────────────────────────────
+DONE! Your APK is ready at:
+───────────────────────────────────────────────────────────────
+
+android/app/build/outputs/apk/debug/app-debug.apk
+
+───────────────────────────────────────────────────────────────
+TO INSTALL ON YOUR PHONE:
+───────────────────────────────────────────────────────────────
+
+1. Copy the app-debug.apk file to your Android phone
+2. Tap the file on your phone
+3. Allow installation from unknown sources if asked
+4. Install and enjoy!
+
+═══════════════════════════════════════════════════════════════
+
+OR USE THE AUTOMATED SCRIPT:
+
+chmod +x build-apk.sh && ./build-apk.sh
+
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,84 @@
+═══════════════════════════════════════════════════════════════════════════════
+                    📱 ANDROID BUILD SCRIPTS - QUICK REFERENCE
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ ADDED TO package.json - Use these npm commands!
+
+═══════════════════════════════════════════════════════════════════════════════
+                              🚀 MOST USED COMMANDS
+═══════════════════════════════════════════════════════════════════════════════
+
+BUILD DEBUG APK (for testing):
+    npm run apk:debug
+
+BUILD RELEASE APK (for production):
+    npm run apk:release
+
+FIND APK FILES:
+    npm run apk:find
+
+═══════════════════════════════════════════════════════════════════════════════
+                              📋 ALL AVAILABLE SCRIPTS
+═══════════════════════════════════════════════════════════════════════════════
+
+SETUP & INITIALIZATION:
+    npm run android:init          → Create Android project (first time only)
+
+SYNC & UPDATE:
+    npm run android:sync          → Build web app + sync to Android
+
+BUILD APK:
+    npm run android:build         → Build debug APK
+    npm run android:build:release → Build release APK
+    npm run apk:debug             → Same as android:build
+    npm run apk:release           → Same as android:build:release
+
+UTILITIES:
+    npm run apk:find              → Find all APK files
+    npm run android:clean         → Clean build cache
+    npm run android:install       → Install APK on connected phone
+    npm run android:open          → Open in Android Studio
+
+═══════════════════════════════════════════════════════════════════════════════
+                              📍 APK LOCATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+DEBUG APK:
+    android/app/build/outputs/apk/debug/app-debug.apk
+
+RELEASE APK:
+    android/app/build/outputs/apk/release/app-release-unsigned.apk
+
+═══════════════════════════════════════════════════════════════════════════════
+                              🔄 COMMON WORKFLOWS
+═══════════════════════════════════════════════════════════════════════════════
+
+FIRST TIME SETUP:
+    npm run android:init
+    npm run apk:debug
+
+AFTER CODE CHANGES:
+    npm run apk:debug
+
+CLEAN BUILD:
+    npm run android:clean
+    npm run apk:debug
+
+BUILD + INSTALL ON PHONE:
+    npm run apk:debug && npm run android:install
+
+═══════════════════════════════════════════════════════════════════════════════
+                              ⚡ QUICK TIPS
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ Use "npm run apk:debug" for fastest build
+✅ Use "npm run apk:find" to locate your APK
+✅ Debug APK = for testing on your phone
+✅ Release APK = for Play Store (needs signing)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 MOST COMMON: npm run apk:debug
+
+═══════════════════════════════════════════════════════════════════════════════
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BBExch Chat - Permission Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        button { padding: 15px 20px; margin: 10px; font-size: 16px; }
+        .result { margin: 10px 0; padding: 10px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>BBExch Chat - Permission Test</h1>
+    
+    <h2>Camera Test</h2>
+    <button onclick="testCamera()">📷 Test Camera</button>
+    <button onclick="testGallery()">🖼️ Test Gallery</button>
+    
+    <h2>Microphone Test</h2>
+    <button onclick="testMicrophone()">🎤 Test Microphone</button>
+    <button onclick="stopRecording()">⏹️ Stop Recording</button>
+    
+    <div id="results"></div>
+    
+    <script>
+        let mediaRecorder;
+        let audioChunks = [];
+        
+        function log(message) {
+            const results = document.getElementById('results');
+            results.innerHTML += '<div class="result">' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+        }
+        
+        async function testCamera() {
+            try {
+                log('Testing camera access...');
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                log('✅ Camera access granted!');
+                stream.getTracks().forEach(track => track.stop());
+            } catch (error) {
+                log('❌ Camera error: ' + error.message);
+            }
+        }
+        
+        async function testGallery() {
+            try {
+                log('Testing file picker...');
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = 'image/*';
+                input.onchange = (e) => {
+                    if (e.target.files[0]) {
+                        log('✅ File selected: ' + e.target.files[0].name);
+                    }
+                };
+                input.click();
+            } catch (error) {
+                log('❌ File picker error: ' + error.message);
+            }
+        }
+        
+        async function testMicrophone() {
+            try {
+                log('Testing microphone access...');
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                log('✅ Microphone access granted!');
+                
+                mediaRecorder = new MediaRecorder(stream);
+                audioChunks = [];
+                
+                mediaRecorder.ondataavailable = (event) => {
+                    audioChunks.push(event.data);
+                };
+                
+                mediaRecorder.onstop = () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
+                    log('✅ Recording completed! Size: ' + audioBlob.size + ' bytes');
+                    stream.getTracks().forEach(track => track.stop());
+                };
+                
+                mediaRecorder.start();
+                log('🎤 Recording started...');
+            } catch (error) {
+                log('❌ Microphone error: ' + error.message);
+            }
+        }
+        
+        function stopRecording() {
+            if (mediaRecorder && mediaRecorder.state === 'recording') {
+                mediaRecorder.stop();
+                log('⏹️ Recording stopped');
+            } else {
+                log('No active recording');
+            }
+        }
+        
+        // Test device info
+        log('Device: ' + navigator.userAgent);
+        log('Platform: ' + navigator.platform);
+    </script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+.department-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 20px;
+}
+
+.department-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.department-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.department-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.logout-button {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.logout-button:hover {
+  background: white;
+  color: #667eea;
+}
+
+.error-banner {
+  background: #fee;
+  color: #c33;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+.department-card {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 40px 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.department-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--dept-color);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.department-card:hover::before {
+  transform: scaleX(1);
+}
+
+.department-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.department-card:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.department-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.dept-unread-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  background: #ef4444;
+  color: white;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+  animation: pulse-badge 2s infinite;
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+}
+
+.department-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.department-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.department-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+
+.info-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.info-box p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .department-header h1 {
+    font-size: 28px;
+  }
+
+  .logout-button {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .department-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .department-card {
+    padding: 30px 20px;
+  }
+
+  .department-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .dept-unread-badge {
+    min-width: 24px;
+    height: 24px;
+    font-size: 12px;
+    top: -8px;
+    right: -8px;
+  }
+
+  .department-name {
+    font-size: 20px;
+  }
+
+  .department-description {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+  .department-container {
+    padding: 20px 15px;
+  }
+
+  .department-header {
+    margin-bottom: 30px;
+  }
+
+  .department-header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .department-header p {
+    font-size: 14px;
+  }
+
+  .logout-button {
+    padding: 6px 16px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .department-grid {
+    gap: 15px;
+  }
+
+  .department-card {
+    padding: 25px 15px;
+  }
+
+  .department-icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+  }
+
+  .dept-unread-badge {
+    min-width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .department-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .department-description {
+    font-size: 12px;
+  }
+}
