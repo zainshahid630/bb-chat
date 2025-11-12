@@ -18,7 +18,7 @@ export const authHelpers = {
   async signupWithUsername(username, password) {
     // Simple signup without OTP - just username and password
     const { data: authData, error: authError } = await supabase.auth.signUp({
-      email: `${username}@bettingapp.local`, // Fake email
+      email: `${username}@businessapp.local`, // Fake email
       password,
       options: {
         emailRedirectTo: undefined,
@@ -50,7 +50,7 @@ export const authHelpers = {
   async signUp(username, password, phoneNumber = null) {
     // Create user in Supabase Auth
     const { data: authData, error: authError } = await supabase.auth.signUp({
-      email: `${username}@bettingapp.local`, // Fake email since we use usernames
+      email: `${username}@businessapp.local`, // Fake email since we use usernames
       password,
       options: {
         emailRedirectTo: undefined,
@@ -87,7 +87,7 @@ export const authHelpers = {
 
     // Create user in Supabase Auth
     const { data: authData, error: authError } = await supabase.auth.signUp({
-      email: `${username}@bettingapp.local`,
+      email: `${username}@businessapp.local`,
       password,
       options: {
         emailRedirectTo: undefined,
@@ -128,7 +128,7 @@ export const authHelpers = {
 
   async signIn(username, password) {
     const { data, error } = await supabase.auth.signInWithPassword({
-      email: `${username}@bettingapp.local`,
+      email: `${username}@businessapp.local`,
       password,
     })
 

@@ -1,6 +1,6 @@
 {
-  "appId": "com.bettingchat.app",
-  "appName": "Betting Chat",
+  "appId": "com.businesschat.app",
+  "appName": "Business Chat",
   "webDir": "dist",
   "bundledWebRuntime": false,
   "server": {

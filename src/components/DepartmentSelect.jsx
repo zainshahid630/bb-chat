@@ -21,7 +21,7 @@ const departments = [
     id: 'new_id',
     name: 'New User ID',
     icon: '🆔',
-    description: 'Create a new betting ID',
+    description: 'Create a new user ID',
     color: '#3b82f6',
   },
   {

@@ -1,6 +1,6 @@
-# 🎰 Betting Chat System
+# 💼 Business Chat System
 
-A secure, web-based chat system to replace WhatsApp for managing betting business operations.
+A secure, web-based chat system to replace WhatsApp for managing business operations.
 
 ## ✨ Features
 

@@ -1,4 +1,4 @@
-package com.bettingchat.app;
+package com.businesschat.app;
 
 import com.getcapacitor.BridgeActivity;
 
